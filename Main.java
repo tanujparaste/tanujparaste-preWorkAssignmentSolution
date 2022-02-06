@@ -55,7 +55,16 @@ public class Main {
   public void printFibonacciSeries() {
     // initialize the first and second value as 0,1 respectively.
     int first = 0, second = 1;
-
+    System.out.print("Enter the length of Fibonacci Series: ");
+    int length = sc.nextInt();
+    System.out.print("Fibonacci Series: " + first + " " + second);
+    for (int i = 3; i <= length; i++) {
+      int next = first + second;
+      System.out.print(" " + next);
+      first = second;
+      second = next;
+    }
+    System.out.println("\n");
   }
 
   // main method which contains switch and do while loop
