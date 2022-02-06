@@ -22,6 +22,14 @@ public class Main {
 
   // function to printPattern
   public void printPattern() {
+    System.out.print("Enter the height of the reverse triangle in number: ");
+    int number = sc.nextInt();
+    for (int i = number; i > 0; i--) {
+      for (int j = 0; j < i; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 
   // function to check no is prime or not
